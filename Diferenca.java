@@ -1,5 +1,3 @@
-import java.util.math;
-
 public class Diferenca{
     
     static double dif_dois_num(double a, double b){
