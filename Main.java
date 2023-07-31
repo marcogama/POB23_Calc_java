@@ -4,14 +4,13 @@ public class Main{
 	
 	public static void main(String[] args) {
 	    
-	    System.out.println("Qual Operacao?");
-	    System.out.println("Soma(+), Subtracao(-), Divisao(/), Multiplicacao(*) Seno(s), Coseno(c), Tangente(t), Potencia(p), Raiz(r)");
-	    
-	    char opcao;
-	    double a, b;
+		char opcao;
+		double a, b;	    
 	    
 		Scanner option = new Scanner(System.in);
-		opcao = option.nextLine().charAt(0);
+		Scanner ent_dt = new Scanner(System.in);
+		
+		
 		Soma soma = new Soma();
 		Diferenca dif = new Diferenca();
 		Mult mult = new Mult();
@@ -21,7 +20,11 @@ public class Main{
 		Tang tan = new Tang();
 		Raiz raiz = new Raiz();
 		Pote pot = new Pote();
-		Scanner ent_dt = new Scanner(System.in);
+
+		System.out.println("Qual Operacao?");
+	    	System.out.println("Soma(+), Subtracao(-), Divisao(/), Multiplicacao(*) Seno(s), Coseno(c), Tangente(t), Potencia(p), Raiz(r)");
+		opcao = option.nextLine().charAt(0);
+		
 		switch (opcao){
 		    
 		    case '+':
