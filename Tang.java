@@ -1,3 +1,5 @@
+import java.util.math;
+
 public class Tang{
     
     static double tangente(double a){
