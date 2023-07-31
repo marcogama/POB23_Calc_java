@@ -4,12 +4,17 @@ public class Main{
 	
 	public static void main(String[] args) {
 	    
+		//Campos da classe main
+		
 		char opcao;
 		double a, b;	    
-	    
+
+		//Instancias Scanner
+		
 		Scanner option = new Scanner(System.in);
 		Scanner ent_dt = new Scanner(System.in);
 		
+		//Instancias das operações
 		
 		Soma soma = new Soma();
 		Diferenca dif = new Diferenca();
@@ -21,9 +26,16 @@ public class Main{
 		Raiz raiz = new Raiz();
 		Pote pot = new Pote();
 
+		//Solicitação da operação desejada
+		
 		System.out.println("Qual Operacao?");
 	    	System.out.println("Soma(+), Subtracao(-), Divisao(/), Multiplicacao(*) Seno(s), Coseno(c), Tangente(t), Potencia(p), Raiz(r)");
+
+		//Comando de entrada de teclado
+		
 		opcao = option.nextLine().charAt(0);
+		
+		//Operações
 		
 		switch (opcao){
 		    
